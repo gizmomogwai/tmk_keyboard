@@ -1,3 +1,4 @@
+
 /*
 Copyright 2013 Oleg Kostyuk <cub.uanic@gmail.com>
 
@@ -22,87 +23,87 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(  // layer 0 : default
         // left hand
-        EQL ,1,   2,   3,   4,   5,   ESC,
-        TAB ,Q,   W,   E,   R,   T,   FN2,
-        CAPS,A,   S,   D,   F,   G,
-        LSFT,Z,   X,   C,   V,   B,   FN1,
-        LGUI,GRV, NUBS,LEFT,RGHT,
-                                      LCTL,LALT,
-                                           HOME,
-                                 BSPC,DEL, END,
-        // right hand
-             FN3, 6,   7,   8,   9,   0,   ESC,
-             QUOT,Y,   U,   I,   O,   P,   NUHS,
-                  H,   J,   K,   L,   SCLN,QUOT,
-             FN1, N,   M,   COMM,DOT, SLSH,RSFT,
-                       UP,  DOWN,LBRC,RBRC,RGUI,
-        RALT,RCTL,
-        PGUP,
-        PGDN,ENT, SPC
-    ),
+           ESC ,1,   2,   3,   4,   5,   ESC,
+           TAB ,Q,   W,   E,   R,   T,   FN2,
+           CAPS,A,   S,   D,   F,   G,
+           LSFT,Z,   X,   C,   V,   B,   FN1,
+           LGUI,NUBS,NUBS,LEFT,RGHT,
+           LCTL,LALT,
+           HOME,
+           BSPC,DEL, END,
+           // right hand
+           FN3, 6,   7,   8,   9,   0,   ESC,
+           QUOT,Y,   U,   I,   O,   P,   NUHS,
+           H,   J,   K,   L,   SCLN,QUOT,
+           FN1, N,   M,   COMM,DOT, SLSH,RSFT,
+           UP,  DOWN,NUBS,NUBS,RGUI,
+           RALT,RCTL,
+           PGUP,
+           PGDN,ENT, SPC
+             ),
 
     KEYMAP(  // layer 1 : function and symbol keys
-        // left hand
-        TRNS,F1,  F2,  F3,  F4,  F5,  F11,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,FN4,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,
-                                      TRNS,TRNS,
-                                           TRNS,
-                                 TRNS,TRNS,TRNS,
-        // right hand
-             F12, F6,  F7,  F8,  F9,  F10, TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                       TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,
-        TRNS,
-        TRNS,TRNS,TRNS
-    ),
+           // left hand
+           TRNS,F1,  F2,  F3,  F4,  F5,  F11,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,FN4,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,
+           TRNS,
+           TRNS,TRNS,TRNS,
+           // right hand
+           F12, F6,  F7,  F8,  F9,  F10, TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,
+           TRNS,
+           TRNS,TRNS,TRNS
+             ),
 
     KEYMAP(  // layer 2 : keyboard functions
-        // left hand
-        FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,
-                                      TRNS,TRNS,
-                                           TRNS,
-                                 TRNS,TRNS,TRNS,
-        // right hand
-             FN4, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                       TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,
-        TRNS,
-        TRNS,TRNS,TRNS
-    ),
+           // left hand
+           FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,
+           TRNS,
+           TRNS,TRNS,TRNS,
+           // right hand
+           FN4, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,MS_BTN1,MS_UP,MS_BTN2,TRNS,TRNS,
+           TRNS,MS_LEFT,MS_DOWN,MS_RIGHT,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,
+           TRNS,
+           TRNS,TRNS,TRNS
+             ),
 
     KEYMAP(  // layer 3: numpad
-        // left hand
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,
-                                      TRNS,TRNS,
-                                           TRNS,
-                                 TRNS,TRNS,TRNS,
-        // right hand
-             TRNS,NLCK,PSLS,PAST,PAST,PMNS,BSPC,
-             TRNS,NO,  P7,  P8,  P9,  PMNS,BSPC,
-                  NO,  P4,  P5,  P6,  PPLS,PENT,
-             TRNS,NO,  P1,  P2,  P3,  PPLS,PENT,
-                       P0,  PDOT,SLSH,PENT,PENT,
-        TRNS,TRNS,
-        TRNS,
-        TRNS,TRNS,TRNS
-    ),
+           // left hand
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,TRNS,TRNS,TRNS,
+           TRNS,TRNS,
+           TRNS,
+           TRNS,TRNS,TRNS,
+           // right hand
+           TRNS,NLCK,PSLS,PAST,PAST,PMNS,BSPC,
+           TRNS,NO,  P7,  P8,  P9,  PMNS,BSPC,
+           NO,  P4,  P5,  P6,  PPLS,PENT,
+           TRNS,NO,  P1,  P2,  P3,  PPLS,PENT,
+           P0,  PDOT,SLSH,PENT,PENT,
+           TRNS,TRNS,
+           TRNS,
+           TRNS,TRNS,TRNS
+             ),
 
 };
 
