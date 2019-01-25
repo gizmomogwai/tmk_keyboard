@@ -6,14 +6,15 @@ end
 desc 'build for ergodox'
 task :build do
   cd 'keyboard/ergodox' do
-    ENV['KEYMAP'] = 'ck'
-    sh 'make -f Makefile.lufa'
+    sh 'env KEYMAP=ck make -f Makefile.lufa -j'
   end
 end
 
 desc 'clean'
 task :clean do
-  sh "find . -name '*.o' -delete"
+  cd 'keyboard/ergodox' do
+    sh 'env KEYMAP=ck make -f Makefile.lufa clean'
+  end
 end
 
 desc 'default'
