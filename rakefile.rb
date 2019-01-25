@@ -11,5 +11,10 @@ task :build do
   end
 end
 
+desc 'clean'
+task :clean do
+  sh "find . -name '*.o' -delete"
+end
+
 desc 'default'
 task :default => [:build, :flash]
