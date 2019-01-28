@@ -1,3 +1,8 @@
+desc 'install stuff for linux'
+task :prepare_linux do
+  sh "sudo apt install avr-libc"
+end
+
 desc 'flash the ergodox'
 task :flash do
   sh "teensy_loader_cli -mmcu=atmega32u4 -v -w keyboard/ergodox/ergodox_lufa.hex"
